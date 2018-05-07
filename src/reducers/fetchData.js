@@ -7,7 +7,7 @@ import {
 const initialState = {
   fetching: false,
   fetched: false,
-  data: [],
+  nbu_data: [],
   error: null
 };
 
@@ -17,7 +17,7 @@ export default function fetchData(state = initialState, { type, payload }) {
       return { ...state, fetching: true };
       break;
     case FETCH_EXCHANGE_RATE_SUCCESS:
-      return { ...state, fetching: false, fetched: true, error: payload };
+      return { ...state, fetching: false, fetched: true, nbu_data: payload };
       break;
     case FETCH_EXCHANGE_RATE_FAILURE:
       return { ...state, fetching: false, error: payload };

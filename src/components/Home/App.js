@@ -1,8 +1,11 @@
 import React from "react";
 import logo from "../../logo.svg";
+import Convertor from "../Convertor/Convertor";
 
 export const App = () => {
-  return <div className="App">hi</div>;
+  return (
+    <div>
+      <Convertor />
+    </div>
+  );
 };
-
-
