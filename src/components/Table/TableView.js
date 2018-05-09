@@ -24,7 +24,7 @@ class TableResultRate extends Component {
         <Table className={classes.table}>
           <TableHead>
             <TableRow>
-              <TableCell>bank</TableCell>
+              <TableCell>Bank</TableCell>
               <TableCell>Echange rate</TableCell>
               <TableCell>Result</TableCell>
             </TableRow>
